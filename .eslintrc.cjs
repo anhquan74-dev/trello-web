@@ -8,18 +8,24 @@ module.exports = {
   ],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: [
-    'react',
-    'react-hooks',
-    'react-refresh'
-  ],
+  plugins: ['react', 'react-hooks', 'react-refresh'],
   rules: {
+    // react
     'react-refresh/only-export-components': 'warn',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 0,
     'react/display-name': 0,
 
+    // mui
+    'no-restricted-imports': [
+      'error',
+      {
+        'patterns': ['@mui/*/*/*']
+      }
+    ],
+
+    // common
     'no-console': 1,
     'no-lonely-if': 1,
     'no-unused-vars': 1,
