@@ -1,5 +1,6 @@
 import Button from '@mui/material/Button'
 import HomeIcon from '@mui/icons-material/Home'
+import { Typography } from '@mui/material'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HomeIcon color="success" />
       <HomeIcon color="action" />
       <HomeIcon color="disabled" />
+      <Typography variant="body2" color="text.secondary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. A repellendus delectus molestias dolorem, odio quam esse magnam cumque qui unde?</Typography>
     </>
   )
 }
